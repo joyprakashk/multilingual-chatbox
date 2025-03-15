@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Mic, Volume2 } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { getChatResponse, ChatMessage } from '@/services/sarvamAIService';
+import { processWithGemini, ChatMessage } from '@/services/sarvamAIService';
 import { useToast } from '@/components/ui/use-toast';
 
 const Chat = () => {
@@ -16,7 +16,7 @@ const Chat = () => {
   const [inputMessage, setInputMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const { currentLanguage } = useLanguage();
+  // const { currentLanguage } = useLanguage();
   const { toast } = useToast();
 
   useEffect(() => {
@@ -41,7 +41,7 @@ const Chat = () => {
     setIsLoading(true);
 
     try {
-      const response = await getChatResponse([...messages, userMessage], currentLanguage.code);
+      const response = await processWithGemini("hi checking");
       
       const assistantMessage: ChatMessage = {
         role: 'assistant',
@@ -144,7 +144,6 @@ const Chat = () => {
             onChange={(e) => setInputMessage(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Type your message here..."
-            className="placeholder-gray-500"
 
             className="flex-1 border rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-brand-blue resize-none"
             rows={1}
