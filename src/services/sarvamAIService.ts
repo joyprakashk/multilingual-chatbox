@@ -1,6 +1,6 @@
 
 const SARVAM_API_KEY = '9e95e478-07bd-4d90-ad75-7cbefa3d8172';
-const SARVAM_API_URL = 'https://api.sarvam.ai/v1/completions'; // Update this if the actual endpoint is different
+const SARVAM_API_URL = 'https://api.sarvam.ai/translate'; // Update this if the actual endpoint is different
 
 export type ChatMessage = {
   content: string;
