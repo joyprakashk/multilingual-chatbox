@@ -144,6 +144,8 @@ const Chat = () => {
             onChange={(e) => setInputMessage(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Type your message here..."
+            className="placeholder-gray-500"
+
             className="flex-1 border rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-brand-blue resize-none"
             rows={1}
           />
