@@ -80,7 +80,7 @@ const DhanAILoanAssistant: React.FC = () => {
             Your AI-Powered Loan Assistant
           </p>
           <button className="mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 animate__animated animate__fadeInUp">
-            Talk to Chatbot
+            <a href="https://f38e-14-99-164-234.ngrok-free.app/">Talk to Chatbot</a>
           </button>
         </section>
 
