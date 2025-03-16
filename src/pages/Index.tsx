@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const DhanAILoanAssistant: React.FC = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
-  const scrollElements = useRef<NodeListOf<Element> | null>(null);
+const [darkMode, setDarkMode] = useState<boolean>(false);
+const scrollElements = useRef<NodeListOf<Element> | null>(null);
 
   // CSS Styles as a JavaScript object
   const styles = {
@@ -347,7 +347,7 @@ const DhanAILoanAssistant: React.FC = () => {
           onClick={toggleDarkMode}
           className="absolute top-4 right-4 bg-gray-800 text-white px-4 py-2 rounded-lg transition duration-300 hover:bg-gray-700"
         >
-          Toggle Dark Mode
+          Night Button
         </button>
 
         {/* Hero Section */}
@@ -363,7 +363,7 @@ const DhanAILoanAssistant: React.FC = () => {
             Dhan AI
           </h1>
           <p className="text-xl text-gray-700 mt-4 animate__animated animate__fadeInUp">
-            Your AI-Powered Loan Assistant
+            Your AI-Powered Multilingual, Conversational Loan Assistant
           </p>
           
   
@@ -380,28 +380,28 @@ const DhanAILoanAssistant: React.FC = () => {
         {/* Features Section */}
         <section className="py-12">
           <h2 className="text-3xl font-bold text-blue-900 text-center mb-8">
-            Features
+            Our Features
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 scroll-fade-in">
               <i className="fas fa-robot text-4xl text-blue-600 float"></i>
-              <h3 className="text-xl font-semibold mt-4">AI Chat Assistant</h3>
+              <h3 className="text-xl font-semibold mt-4">Chat Assistant with AI</h3>
               <p className="text-gray-600 mt-2">
-                Get instant AI-powered loan guidance.
+                Get instant loan guidance based on your financial situation and needs. Our app will talk you through the loan process.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 scroll-fade-in">
               <i className="fas fa-calculator text-4xl text-purple-600 float"></i>
-              <h3 className="text-xl font-semibold mt-4">Loan Calculator</h3>
+              <h3 className="text-xl font-semibold mt-4">Loan Eligibility Calculator</h3>
               <p className="text-gray-600 mt-2">
-                Easily calculate your EMIs and loan costs.
+                Easily get to know if you are eligible for loan, based on your Credit Score, Income, and other factors.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-2 scroll-fade-in">
               <i className="fas fa-lock text-4xl text-green-600 float"></i>
               <h3 className="text-xl font-semibold mt-4">Secure & Private</h3>
               <p className="text-gray-600 mt-2">
-                Your data is safe with end-to-end encryption.
+                Your data is safe with end-to-end encryption. We do not store any of your personal information.
               </p>
             </div>
           </div>
