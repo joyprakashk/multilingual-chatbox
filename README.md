@@ -23,7 +23,7 @@ cd <YOUR_PROJECT_NAME>
 npm i vite_react_shadcn_ts
 
 cd src
-npm i @google/gemini-ai
+npm i @google/generative-ai
 
 # Step 4: Put your own SARVAM_API_KEY and GEMINI_API_KEY
 
