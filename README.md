@@ -3,58 +3,40 @@
 This prototype is developed in 'The Great Bengaluru Hackathon' under Track 2 'Sarvam AI' by our team. It qualified Round 1 stage and our team reached the Grand Finale of the hackathon,
 which was held in PES University.
 
-### Project info
+## Prototype info
 
 ### Try it yourself
 
-If you want to work locally using your own IDE, you can clone this repo and run it in your browser at localhost.
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+If you want to work locally, you can clone this repo and run it in your browser at localhost.
+The only requirement is having Node.js installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/joyprakashk/multilingual-chatbox.git
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd multilingual-chatbox
 
 # Step 3: Install the necessary dependencies.
 npm i vite_react_shadcn_ts
-
 cd src
 npm i @google/generative-ai
 
 # Step 4: Put your own SARVAM_API_KEY and GEMINI_API_KEY
 
-# Step 5: Start the development server with auto-reloading and an instant preview.
+# Step 5: Start the development server.
 npm run dev
 ```
 
-** Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### What technologies are used for this prototype?
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-### What technologies are used for this project?
-
-This project is built with .
+This prototype is built with
 
 - Vite
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
-
-### I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
